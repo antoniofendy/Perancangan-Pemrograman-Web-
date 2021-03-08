@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    @font-face {
+        font-family: montserrat;
+        src: url('../assets/font/montserrat.ttf');
+    }
+}
+
+body{
+    font-family: montserrat;
+    color: rgb(1,28,39);
+}
+
+.container{
+    padding: 100px;
+    min-height: 400px;
+    display: flex;
+}
+
+.container .contact-info, .container .guest-form{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.container .contact-info .contact-list{
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgb(255, 213, 213);
+    margin: 20px 0;
+    border-radius: 20px;
+    display: flex;
+}
+
+.contact-info .contact-list a{
+    text-decoration: none;
+    color: rgb(1,28,39);
+}
+
+.container img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container .guest-form{
+    width: 50%;
+}
+
+.container .guest-form h1{
+    margin-bottom: 20px;
+}   
+
+.container .guest-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .guest-form form input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container .guest-form form button{
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(1,28,39);
+    border: none;
+}
+
+.container .guest-form form button:hover{
+    background-color: rgb(0, 117, 39);
+}
+
+@media screen and (max-width: 576px) {
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 0;
+    }
+
+    .container .contact-info{
+        width: auto;
+    }
+
+    .container .guest-form{
+        margin-top: 20px;
+        width: auto;
+    }
+
+}

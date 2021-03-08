@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    @font-face {
+        font-family: montserrat;
+        src: url('../assets/font/montserrat.ttf');
+    }
+}
+
+body{
+    font-family: montserrat;
+}
+
+.container{
+    padding: 100px 100px 100px 50px;
+    display: flex;
+    min-height: 400px;
+}
+
+/* Awal artikel */
+
+section.articles{
+    width: 70%;
+}
+
+section.articles .img-hover-zoom{
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    width: 100%;
+}
+
+section.articles .img-hover-zoom:hover img{
+    transform: scale(1.1);
+}
+
+section.articles .img-hover-zoom img{
+    transition: all 0.3s;
+    width: 200px;
+    height: 130px;
+    transform: scale(1);
+}
+
+section.articles .article{
+    display: flex;
+    min-height: 200px;
+}
+
+section.articles .article .content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+section.articles .article .content p{
+    overflow: hidden;
+}
+
+section.articles .article .content a{
+    padding: 4px;
+    background-color: rgb(1,28,39);
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    font-size: xx-small;
+}
+
+section.articles .article .content a:hover{
+    background-color: rgb(255, 96, 5);
+}
+
+section.articles .pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section.articles .pagination a{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgb(255, 213, 213);
+    text-decoration: none;
+    color: rgb(1,28,39);
+    border-radius: 10px;
+}
+
+section.articles .pagination a:hover{
+    color: white;
+    background-color: rgb(1,28,39);
+}
+
+/* Akhir artikel */
+
+/* Awal aside */
+
+aside{
+    width: 30%;
+}
+
+aside h2{
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(1,28,39);
+    color: white;
+}
+
+aside iframe{
+    width: 100%;
+}
+
+/* Akhir aside */
+
+@media screen and (max-width: 576px) {
+
+    section.articles{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+
+    section.articles .article{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section.articles .article .content{
+        margin: 10px 0;
+    }
+
+    section.articles .img-hover-zoom{
+        height: 100%;
+    }
+
+    section.articles .img-hover-zoom img{
+        width: 100%;
+        height: 100%;
+    }
+
+    aside{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}

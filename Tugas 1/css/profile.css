@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    @font-face {
+        font-family: montserrat;
+        src: url('../assets/font/montserrat.ttf');
+    }
+}
+
+body{
+    font-family: montserrat;
+    color: rgb(1,28,39);
+}
+
+/* Awal Section pink*/
+
+section.pink{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 0 15px 15px;
+}
+
+section.pink {
+    background-color:rgb(255, 213, 213);
+}
+
+section.major {
+    background-color:rgb(255, 255, 255);
+}
+
+section.pink img{
+    width: 250px;
+    height: 250px;
+}
+
+section.pink .content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+section.pink .content{
+    background-color: rgb(255, 255, 255);
+}
+
+section.pink .content h1, section.major .content h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+section.pink .content p{
+    line-height: 2;
+}
+
+/* Akhir Section pink */
+
+/* Awal section major */
+
+section.major{
+    padding: 50px 20px 50px 0;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section.major h1{
+    padding: 50px;
+    background-color: rgb(255, 213, 213);
+    display: block;
+    border-radius: 0 50px 50px 0;
+}
+
+section.major .content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: auto;
+}
+
+section.major .content .major_type img{
+    width: 200px;
+    height: 100px;
+}
+
+section.major .content .major_type{
+    background-color: rgb(218, 218, 218);
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+
+section.major .content .major_type h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+section.major .content p{
+    line-height: 1.5;
+    font-size: smaller;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Akhir section major */
+
+/* Awal section vision-mission */
+
+section.vision-mission{
+    padding: 50px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(255, 213, 213);
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+section.vision-mission .vision, section.vision-mission .mission{
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+section.vision-mission .mission li{
+    margin-bottom: 10px;
+}
+
+/* Akhir section vision-mission */
+
+/* Awal section facility */
+
+section.facility{
+    padding: 50px 0 50px 0;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+section.facility .content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: auto;
+    justify-content: center;
+}
+
+
+section.facility h1{
+    padding: 50px;
+    background-color: rgb(255, 213, 213);
+    display: block;
+    border-radius: 50px 0 0 50px;
+}
+
+section.facility .content .facility_type{
+    margin: 10px;
+}
+
+section.facility .content .facility_type img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+section.facility .content .facility_type h3{
+    text-align: center;
+}
+
+/* Akhir section facility */
+
+@media screen and (max-width: 576px) {
+    section.pink .content, section.major .content{
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    section.major .content{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    section.vision-mission .mission{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+/* Awal footer */
+
+footer{
+    background-color: rgb(255, 213, 213);
+    height: 50px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+footer p{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/* Akhir footer */
