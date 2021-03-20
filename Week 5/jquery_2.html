@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery 2</title>
+    <script src="./dist/bootstrap-4.5.3-dist/js/jquery-3.6.0.slim.min.js"></script>
+    <script>
+        $('document').ready(() => {
+            $(window).resize(() => {
+                $('h2:first').text('Lebar browser: ' + $(this).weight());
+                $('h2:last').text('Panjang browser: ' + $(this).height());
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2></h2>
+    <h2></h2>
+
+</body>
+
+</html>
