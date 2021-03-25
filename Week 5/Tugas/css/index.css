@@ -95,7 +95,7 @@ section#top i{
 
 
 section{
-    min-height: 300px;
+    min-height: 500px;
     padding: 50px;
 }
 
@@ -123,10 +123,54 @@ section .content{
 
 /* Awal Section History */
 
-.p1, .p2, .p3{
-    text-align: justify;
-    margin: 0 10px;
+section#history .content{
+    flex-direction: column;
 }
+
+#my-timeline{
+    background-color: rgb(17, 34, 82);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.event__date{
+    font-size: medium;
+}
+
+.event__content{
+    font-size: 12px;
+}
+
+.event__date, .event__content, i{
+    color: white;
+}
+
+.history-details{
+    width: fit-content;
+    height: 50px;
+    align-self: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(17, 34, 82);
+    color: white;
+}
+
+.history-details:hover{
+    background-color: #e73c7e;
+}
+
+.paragraph{
+    text-align: justify;  
+    line-height: 1.5;
+    margin: 20 0x;
+    padding: 20px;
+}
+
+
 
 /* Akhir Section History */
 
@@ -159,6 +203,7 @@ section#products .list .card:hover {
 }
 
 /* Akhir Section products */
+
 
 /* Awal Section Gallery */
 
@@ -198,5 +243,8 @@ footer p{
 @media screen and (max-width: 576px){
     section#history .content{
         flex-wrap: wrap;
+    }
+    section#products .list{
+        justify-content: center;
     }
 }
